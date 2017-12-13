@@ -1,0 +1,23 @@
+CS4320 Team Project #1:
+Group #16
+
+Budget - pick at the start (team chosen)
+Length of trip - 5 days
+When the trip occurs - Dec 17 - 21
+
+Location <- either pick at start and that is your goal
+         <- choosing destination is part of the plan
+         
+Purpose <- establish by the team
+Food
+Excursions
+Lodging
+How are you going to get around (rental, taxi, personal car)
+    -> meter lots/costs for gas prices
+
+
+Tell Dale:
+how much money/per person
+location
+
+

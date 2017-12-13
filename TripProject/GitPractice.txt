@@ -1,0 +1,236 @@
+Last login: Thu Aug 24 08:36:54 on ttys001
+mwc-105064:~ Nicolle$ cd Desktop/
+mwc-105064:Desktop Nicolle$ mkdir "Hello World"
+mwc-105064:Desktop Nicolle$ ls -al
+total 336
+drwx------+ 20 Nicolle  staff     680 Aug 24 14:27 .
+drwxr-xr-x+ 55 Nicolle  staff    1870 Aug 16 14:41 ..
+-rw-r--r--@  1 Nicolle  staff   18436 Aug 24 14:27 .DS_Store
+-rw-r--r--   1 Nicolle  staff       0 Apr 10 22:46 .localized
+drwxr-xr-x   2 Nicolle  staff      68 Aug 23 19:57 COMM 1200
+drwxr-xr-x   2 Nicolle  staff      68 Aug 23 19:57 CS4050
+drwxr-xr-x   3 Nicolle  staff     102 Aug 24 13:44 CS4320
+drwxr-xr-x   5 Nicolle  staff     170 Aug 24 13:42 CS4830
+drwxr-xr-x   2 Nicolle  staff      68 Aug 23 19:56 CS4850
+drwxr-xr-x   5 Nicolle  staff     170 May 16 19:48 Code
+drwxr-xr-x   4 Nicolle  staff     136 Apr 10 22:46 Desktop
+drwxrwxrwx   6 Nicolle  staff     204 May 19 20:12 GRE
+drwxr-xr-x   2 Nicolle  staff      68 Aug 24 14:27 Hello World
+drwxr-xr-x   2 Nicolle  staff      68 Aug 23 19:58 IT3940
+drwxr-xr-x@ 13 Nicolle  staff     442 Apr 10 19:45 Minecraft Server
+drwxr-xr-x@ 19 Nicolle  staff     646 Apr 10 19:48 Random
+-rw-r--r--@  1 Nicolle  staff  149311 Jul 28 18:09 Resume070517.docx
+drwxr-xr-x@ 21 Nicolle  staff     714 Aug 23 19:58 School
+drwxr-xr-x@  8 Nicolle  staff     272 Apr 10 19:23 Swift
+drwxr-xr-x  11 Nicolle  staff     374 Aug 23 20:00 Textbooks
+mwc-105064:Desktop Nicolle$ cd Hello\ World/
+mwc-105064:Hello World Nicolle$ ls -al
+total 0
+drwxr-xr-x   2 Nicolle  staff   68 Aug 24 14:27 .
+drwx------+ 20 Nicolle  staff  680 Aug 24 14:27 ..
+mwc-105064:Hello World Nicolle$ touch .gitkeep
+mwc-105064:Hello World Nicolle$ ls -al
+total 0
+drwxr-xr-x   3 Nicolle  staff  102 Aug 24 14:28 .
+drwx------+ 20 Nicolle  staff  680 Aug 24 14:27 ..
+-rw-r--r--   1 Nicolle  staff    0 Aug 24 14:28 .gitkeep
+mwc-105064:Hello World Nicolle$ ls -al
+total 0
+drwxr-xr-x   3 Nicolle  staff  102 Aug 24 14:28 .
+drwx------+ 20 Nicolle  staff  680 Aug 24 14:27 ..
+-rw-r--r--   1 Nicolle  staff    0 Aug 24 14:28 .gitkeep
+mwc-105064:Hello World Nicolle$ git init
+Initialized empty Git repository in /Users/Nicolle/Desktop/Hello World/.git/
+mwc-105064:Hello World Nicolle$ ls -al
+total 0
+drwxr-xr-x   4 Nicolle  staff  136 Aug 24 14:36 .
+drwx------+ 20 Nicolle  staff  680 Aug 24 14:27 ..
+drwxr-xr-x  10 Nicolle  staff  340 Aug 24 14:36 .git
+-rw-r--r--   1 Nicolle  staff    0 Aug 24 14:28 .gitkeep
+mwc-105064:Hello World Nicolle$ cd .git
+mwc-105064:.git Nicolle$ ls -al
+total 24
+drwxr-xr-x  10 Nicolle  staff  340 Aug 24 14:36 .
+drwxr-xr-x   4 Nicolle  staff  136 Aug 24 14:36 ..
+-rw-r--r--   1 Nicolle  staff   23 Aug 24 14:36 HEAD
+drwxr-xr-x   2 Nicolle  staff   68 Aug 24 14:36 branches
+-rw-r--r--   1 Nicolle  staff  137 Aug 24 14:36 config
+-rw-r--r--   1 Nicolle  staff   73 Aug 24 14:36 description
+drwxr-xr-x  12 Nicolle  staff  408 Aug 24 14:36 hooks
+drwxr-xr-x   3 Nicolle  staff  102 Aug 24 14:36 info
+drwxr-xr-x   4 Nicolle  staff  136 Aug 24 14:36 objects
+drwxr-xr-x   4 Nicolle  staff  136 Aug 24 14:36 refs
+mwc-105064:.git Nicolle$ cd ..
+mwc-105064:Hello World Nicolle$ ls
+mwc-105064:Hello World Nicolle$ ls -al
+total 0
+drwxr-xr-x   4 Nicolle  staff  136 Aug 24 14:36 .
+drwx------+ 20 Nicolle  staff  680 Aug 24 14:27 ..
+drwxr-xr-x  10 Nicolle  staff  340 Aug 24 14:36 .git
+-rw-r--r--   1 Nicolle  staff    0 Aug 24 14:28 .gitkeep
+mwc-105064:Hello World Nicolle$ git add .
+mwc-105064:Hello World Nicolle$ git commit -m "First commit"
+[master (root-commit) 375e349] First commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitkeep
+mwc-105064:Hello World Nicolle$ git remote add origin https://github.com/nlenzmeier/Hello-World.git
+mwc-105064:Hello World Nicolle$ git pull --rebase origin master
+warning: no common commits
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (6/6), done.
+Unpacking objects: 100% (7/7), done.
+remote: Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+From https://github.com/nlenzmeier/Hello-World
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+First, rewinding head to replay your work on top of it...
+Applying: First commit
+mwc-105064:Hello World Nicolle$ git branch
+* master
+mwc-105064:Hello World Nicolle$ git rm -r --cached .
+rm '.gitignore'
+rm '.gitkeep'
+rm 'README.md'
+mwc-105064:Hello World Nicolle$ ls -al
+total 16
+drwxr-xr-x   6 Nicolle  staff   204 Aug 24 14:42 .
+drwx------+ 20 Nicolle  staff   680 Aug 24 14:27 ..
+drwxr-xr-x  15 Nicolle  staff   510 Aug 24 14:44 .git
+-rw-r--r--   1 Nicolle  staff  1458 Aug 24 14:42 .gitignore
+-rw-r--r--   1 Nicolle  staff     0 Aug 24 14:42 .gitkeep
+-rw-r--r--   1 Nicolle  staff    44 Aug 24 14:42 README.md
+mwc-105064:Hello World Nicolle$ git add .
+mwc-105064:Hello World Nicolle$ ls -al
+total 16
+drwxr-xr-x   6 Nicolle  staff   204 Aug 24 14:42 .
+drwx------+ 20 Nicolle  staff   680 Aug 24 14:27 ..
+drwxr-xr-x  15 Nicolle  staff   510 Aug 24 14:45 .git
+-rw-r--r--   1 Nicolle  staff  1458 Aug 24 14:42 .gitignore
+-rw-r--r--   1 Nicolle  staff     0 Aug 24 14:42 .gitkeep
+-rw-r--r--   1 Nicolle  staff    44 Aug 24 14:42 README.md
+mwc-105064:Hello World Nicolle$ git commit -m "Applied .gitignore"
+On branch master
+nothing to commit, working tree clean
+mwc-105064:Hello World Nicolle$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 319 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/nlenzmeier/Hello-World.git
+   ada5b62..59036d5  master -> master
+Branch master set up to track remote branch master from origin.
+mwc-105064:Hello World Nicolle$ git branch feature/HelloWorld
+mwc-105064:Hello World Nicolle$ git branch
+  feature/HelloWorld
+* master
+mwc-105064:Hello World Nicolle$ git checkout feature/HelloWorld
+Switched to branch 'feature/HelloWorld'
+mwc-105064:Hello World Nicolle$ git branch
+* feature/HelloWorld
+  master
+mwc-105064:Hello World Nicolle$ la -al
+-bash: la: command not found
+mwc-105064:Hello World Nicolle$ nano HelloWorld.txt
+mwc-105064:Hello World Nicolle$ ls -al
+total 24
+drwxr-xr-x   7 Nicolle  staff   238 Aug 24 14:55 .
+drwx------+ 20 Nicolle  staff   680 Aug 24 14:27 ..
+drwxr-xr-x  15 Nicolle  staff   510 Aug 24 14:54 .git
+-rw-r--r--   1 Nicolle  staff  1458 Aug 24 14:42 .gitignore
+-rw-r--r--   1 Nicolle  staff     0 Aug 24 14:42 .gitkeep
+-rw-r--r--   1 Nicolle  staff    12 Aug 24 14:55 HelloWorld.txt
+-rw-r--r--   1 Nicolle  staff    44 Aug 24 14:42 README.md
+mwc-105064:Hello World Nicolle$ git add .
+mwc-105064:Hello World Nicolle$ git commit -m "Added HelloWorld.txt"
+[feature/HelloWorld 43043d6] Added HelloWorld.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 HelloWorld.txt
+mwc-105064:Hello World Nicolle$ git push -u origin feature/HelloWorld
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 376 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/nlenzmeier/Hello-World.git
+ * [new branch]      feature/HelloWorld -> feature/HelloWorld
+Branch feature/HelloWorld set up to track remote branch feature/HelloWorld from origin.
+mwc-105064:Hello World Nicolle$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+mwc-105064:Hello World Nicolle$ git branch
+  feature/HelloWorld
+* master
+mwc-105064:Hello World Nicolle$ git merge feature/HelloWorld
+Updating 59036d5..43043d6
+Fast-forward
+ HelloWorld.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 HelloWorld.txt
+mwc-105064:Hello World Nicolle$ ls -al
+total 24
+drwxr-xr-x   7 Nicolle  staff   238 Aug 24 14:59 .
+drwx------+ 20 Nicolle  staff   680 Aug 24 14:27 ..
+drwxr-xr-x  15 Nicolle  staff   510 Aug 24 14:59 .git
+-rw-r--r--   1 Nicolle  staff  1458 Aug 24 14:42 .gitignore
+-rw-r--r--   1 Nicolle  staff     0 Aug 24 14:42 .gitkeep
+-rw-r--r--   1 Nicolle  staff    12 Aug 24 14:59 HelloWorld.txt
+-rw-r--r--   1 Nicolle  staff    44 Aug 24 14:42 README.md
+mwc-105064:Hello World Nicolle$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/nlenzmeier/Hello-World.git
+   59036d5..43043d6  master -> master
+Branch master set up to track remote branch master from origin.
+mwc-105064:Hello World Nicolle$ git branch
+  feature/HelloWorld
+* master
+mwc-105064:Hello World Nicolle$ git branch bugfix/HelloWorld
+mwc-105064:Hello World Nicolle$ git branch
+  bugfix/HelloWorld
+  feature/HelloWorld
+* master
+mwc-105064:Hello World Nicolle$ git checkout bugfix/HelloWorld
+Switched to branch 'bugfix/HelloWorld'
+mwc-105064:Hello World Nicolle$ git branch
+* bugfix/HelloWorld
+  feature/HelloWorld
+  master
+mwc-105064:Hello World Nicolle$ nano HelloWorld.txt 
+mwc-105064:Hello World Nicolle$ git add .
+mwc-105064:Hello World Nicolle$ git commit -m "Fixed HelloWorld.txt with !"
+-bash: !": event not found
+mwc-105064:Hello World Nicolle$ git commit -m "Fixed HelloWorld.txt"
+[bugfix/HelloWorld 2fa136f] Fixed HelloWorld.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+mwc-105064:Hello World Nicolle$ git push -u origin bugfix/HelloWorld
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 289 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nlenzmeier/Hello-World.git
+ * [new branch]      bugfix/HelloWorld -> bugfix/HelloWorld
+Branch bugfix/HelloWorld set up to track remote branch bugfix/HelloWorld from origin.
+mwc-105064:Hello World Nicolle$ git branch
+* bugfix/HelloWorld
+  feature/HelloWorld
+  master
+mwc-105064:Hello World Nicolle$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+mwc-105064:Hello World Nicolle$ git branch
+  bugfix/HelloWorld
+  feature/HelloWorld
+* master
+mwc-105064:Hello World Nicolle$ git merge bugfix/HelloWorld
+Updating 43043d6..2fa136f
+Fast-forward
+ HelloWorld.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+mwc-105064:Hello World Nicolle$ git push -u origin master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/nlenzmeier/Hello-World.git
+   43043d6..2fa136f  master -> master
+Branch master set up to track remote branch master from origin.
+mwc-105064:Hello World Nicolle$ 
